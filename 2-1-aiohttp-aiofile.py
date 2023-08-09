@@ -5,7 +5,7 @@ import sys
 import asyncio
 import time
 
-import aiohttp
+import aiohttps
 import aiofiles
 
 
@@ -38,11 +38,12 @@ async def main():
     print(f"Time to complete asyncio read/writes: {round(end - start, 2)} seconds")
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     # On Windows, this finishes successfully, but throws 'RuntimeError: Event loop is closed'
     # The following lines fix this
     # Source: https://github.com/encode/httpx/issues/914#issuecomment-622586610
     if sys.version_info[0] == 3 and sys.version_info[1] >= 8 and sys.platform.startswith('win'):
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
-    asyncio.run(main())
+asyncio.run(main())
+
