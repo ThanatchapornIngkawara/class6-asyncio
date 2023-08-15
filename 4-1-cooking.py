@@ -47,3 +47,21 @@ if __name__ == "__main__":
     asyncio.run(main())
     elapsed = time.perf_counter() - s
     print(f"{time.ctime()} - Breakfast cooked in", elapsed, "seconds.")
+
+
+
+# Tue Aug 15 23:39:14 2023 - Pouring coffee
+# Coffee is ready
+# Tue Aug 15 23:39:14 2023 - Heat pan to fry eggs
+# Tue Aug 15 23:39:14 2023 - Toasting bread 1
+# Tue Aug 15 23:39:17 2023 - Frying 2 eggs
+# Tue Aug 15 23:39:17 2023 - Bread 1 toasted
+# Tue Aug 15 23:39:17 2023 - Spreading butter on toast
+# Tue Aug 15 23:39:18 2023 - Toast 1 ready
+# Tue Aug 15 23:39:18 2023 - Toasting bread 2
+# Eggs are ready
+# Tue Aug 15 23:39:21 2023 - Bread 2 toasted
+# Tue Aug 15 23:39:21 2023 - Spreading butter on toast
+# Tue Aug 15 23:39:22 2023 - Toast 2 ready
+# Tue Aug 15 23:39:22 2023 - Breakfast is ready!
+# Tue Aug 15 23:39:22 2023 - Breakfast cooked in 8.0170392 seconds.
