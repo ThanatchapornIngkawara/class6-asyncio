@@ -48,7 +48,6 @@ if __name__ == "__main__":
     elapsed = time.perf_counter() - s
     print(f"{time.ctime()} - Breakfast cooked in", elapsed, "seconds.")
 
-#
 
 # Tue Aug 15 23:39:14 2023 - Pouring coffee
 # Coffee is ready
