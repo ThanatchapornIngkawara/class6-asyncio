@@ -5,7 +5,7 @@ import sys
 import asyncio
 import time
 
-import aiohttps
+import aiohttp
 import aiofiles
 
 
