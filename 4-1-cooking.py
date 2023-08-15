@@ -12,7 +12,6 @@ class Toast:
 
 async def PourCoffee():
     print(f"{time.ctime()} - Pouring coffee")
-    
     print("Coffee is ready")
     return Coffee()
 
@@ -23,7 +22,7 @@ async def ApplyButter():
 async def FryEggsAsync(howMany):
     print(f"{time.ctime()} - Heat pan to fry eggs")
     await asyncio.sleep(3)
-    print("Frying", howMany, "eggs")
+    print(f"{time.ctime()} - Frying", howMany, "eggs")
     await asyncio.sleep(3)
     print("Eggs are ready")
     return Egg()
@@ -41,8 +40,9 @@ async def main():
     coffee = await PourCoffee()
     await asyncio.gather(FryEggsAsync(2), ToastAsync(2))
     print(f"{time.ctime()} - Breakfast is ready!")
+    
 
-if __name__ == "main":
+if __name__ == "__main__":
     s = time.perf_counter()
     asyncio.run(main())
     elapsed = time.perf_counter() - s
